@@ -220,3 +220,5 @@ Project Link - [https://github.com/ArmanKhanTech/DailyDoze](https://github.com/A
 [Java-url]: https://www.java.com/
 [Gradle]: https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white
 [Gradle-url]: https://gradle.org/
+[Sqlite]: https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white
+[Sqlite-url]: https://www.sqlite.org/
