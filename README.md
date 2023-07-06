@@ -22,7 +22,6 @@
     <a href="https://github.com/ArmanKhanTech/FocusOnMe"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    ·
     <a href="https://github.com/ArmanKhanTech/FocusOnMe/issues">Report a Bug</a>
     ·
     <a href="https://github.com/ArmanKhanTech/FocusOnMe/issues">Request new Feature</a>
