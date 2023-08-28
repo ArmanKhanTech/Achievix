@@ -107,34 +107,31 @@ Follow the below instructions to get started.
 
 <ol>
   <li>
-    <p>Block apps.</a>
+    <p>Block Apps.</a>
   </li>
   <li>
-    <p>Limit app's usage per day.</a>
+    <p>Limit App's Usage per Day.</a>
   </li>
   <li>
-    <p>Notifiction block.</a>
+    <p>Notifiction Block.</a>
   </li>
     <li>
-    <p>Block certain websites.</a>
+    <p>Block Websites.</a>
   </li>
     <li>
-    <p>Limit internet usage per app.</a>
-  </li>
-    <li>
-    <p>Daily job reminder.</a>
+    <p>Limit Internet Usage per App.</a>
   </li>
    <li>
-    <p>View each apps stats.</a>
+    <p>View Each App's Stats.</a>
   </li>
      <li>
-    <p>Usage analysis.</a>
+    <p>Usage Analysis.</a>
   </li>
      <li>
-    <p>Parental control.</a>
+    <p>Parental Control.</a>
   </li>
    <li>
-    <p>Uninstall protection.</a>
+    <p>Uninstall Protection.</a>
   </li>
 </ol>
 
