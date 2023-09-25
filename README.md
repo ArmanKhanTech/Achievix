@@ -147,7 +147,6 @@ Follow the below instructions to get started.
 - [x] Add URL Service
 - [x] Add Internet Limit Activity
 - [x] Add Usage Stats
-- [x] Add Daily Reminder
 - [x] Add Notification Blocker
 - [x] Add Parentel Control
 - [x] Reduce RAM Consumption
