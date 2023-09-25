@@ -150,7 +150,7 @@ Follow the below instructions to get started.
 - [x] Add Daily Reminder
 - [x] Add Notification Blocker
 - [x] Add Parentel Control
-- [x] Reduce RAM Usage
+- [x] Reduce RAM Consumption
 - [x] Add Uninstall Protect
 - [ ] Major Upgrade
 
