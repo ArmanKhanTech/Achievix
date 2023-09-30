@@ -182,7 +182,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Arman Khan - ak2341776@gmail.com
 
-Project Link - [https://github.com/ArmanKhanTech/FocusOnMe](https://github.com/ArmanKhanTech/FocusOnMe)
+Project Link - [https://github.com/ArmanKhanTech/FocusOnMe](https://github.com/ArmanKhanTech/Achievix)
 
 
 
