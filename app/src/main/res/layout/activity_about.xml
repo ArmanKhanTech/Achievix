@@ -11,7 +11,7 @@
         android:id="@+id/b123477"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/back_icon"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,20 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Developed By : CO6I-A / 7 "
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.917" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -44,12 +30,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.112"
-        app:srcCompat="@drawable/app_icon_rc" />
+        app:srcCompat="@drawable/app_icon_rc"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FocusOnMe"
+        android:text="Achievix"
         android:textColor="@color/black"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
