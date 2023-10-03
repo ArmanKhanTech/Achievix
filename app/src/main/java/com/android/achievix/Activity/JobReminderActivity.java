@@ -20,7 +20,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.achievix.Adapter.AppAdapter;
 import com.android.achievix.Adapter.AppList;
-import com.android.achievix.DataBase.JobDatabase;
+import com.android.achievix.Database.JobDatabase;
 import com.android.achievix.R;
 
 import java.util.ArrayList;

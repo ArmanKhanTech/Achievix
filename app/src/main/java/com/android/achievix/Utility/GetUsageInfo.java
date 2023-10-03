@@ -20,7 +20,6 @@ import java.util.Map;
 import java.util.Objects;
 
 public class GetUsageInfo {
-
     Context context;
 
     public GetUsageInfo(Context context){

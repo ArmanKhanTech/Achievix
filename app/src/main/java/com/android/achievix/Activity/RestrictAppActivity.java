@@ -18,8 +18,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.android.achievix.DataBase.AnalysisDatabase;
-import com.android.achievix.DataBase.SaveRestrictPackages;
+import com.android.achievix.Database.AnalysisDatabase;
+import com.android.achievix.Database.RestrictPackages;
 import com.android.achievix.R;
 import com.android.achievix.Service.ForegroundService;
 import com.android.achievix.Utility.GetUsageInfo;
@@ -39,7 +39,7 @@ import java.util.Objects;
 
 public class RestrictAppActivity extends AppCompatActivity {
 
-    SaveRestrictPackages db=new SaveRestrictPackages(this);
+    RestrictPackages db=new RestrictPackages(this);
     AnalysisDatabase db2;
     ArrayList<String> packs=new ArrayList<>();
     String packageName="";

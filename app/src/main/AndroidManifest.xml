@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.android.achievix">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission
         android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -49,7 +49,7 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".Service.AlarmBoardcast" />
+        <receiver android:name=".Service.AlarmBroadcast" />
 
         <service
             android:name=".Service.ForegroundService"
@@ -72,8 +72,8 @@
             </intent-filter>
 
             <meta-data
-                android:name="android.accessibilityservice"
-                android:resource="@xml/accessibilityservice" />
+                android:name="android.accessibility-service"
+                android:resource="@xml/accessibility_service" />
         </service>
 
         <activity

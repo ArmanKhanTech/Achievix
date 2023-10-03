@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
 
-import com.android.achievix.DataBase.Packages;
+import com.android.achievix.Database.Packages;
 import com.android.achievix.R;
 
 import java.util.ArrayList;
@@ -24,11 +24,11 @@ public class AppAdapter extends BaseAdapter implements Filterable {
     ItemFilter cs;
 
     public AppAdapter(Context context, ArrayList<AppList> customizedListView) {
-        layoutInflater =(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         listStorage = customizedListView;
         filteredApps= customizedListView;
-        db=new Packages(context);
-        mContext=context;
+        db = new Packages(context);
+        mContext = context;
     }
 
     @Override
@@ -110,7 +110,7 @@ public class AppAdapter extends BaseAdapter implements Filterable {
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults filterResults) {
-            listStorage=(ArrayList<AppList>) filterResults.values;
+            listStorage = (ArrayList<AppList>) filterResults.values;
             notifyDataSetChanged();
         }
     }

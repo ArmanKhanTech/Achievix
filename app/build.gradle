@@ -3,18 +3,15 @@ plugins {
 }
 
 android {
-    compileSdk 31
-
+    compileSdk 34
     defaultConfig {
-        applicationId "com.android.focusonme"
-        minSdk 22
-        targetSdk 31
+        applicationId "com.android.achievix"
+        minSdk 28
+        targetSdk 34
         versionCode 1
-        versionName "1.0"
-
+        versionName "1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -28,21 +25,23 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.android.achievix'
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.6.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation (platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.navigation:navigation-fragment:2.4.2'
-    implementation 'androidx.navigation:navigation-ui:2.4.2'
+    implementation 'androidx.navigation:navigation-fragment:2.7.3'
+    implementation 'androidx.navigation:navigation-ui:2.7.3'
     implementation 'com.jjoe64:graphview:4.2.2'
-    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
     implementation 'com.google.firebase:protolite-well-known-types:18.0.0'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 

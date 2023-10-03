@@ -1,4 +1,4 @@
-package com.android.achievix.DataBase;
+package com.android.achievix.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 
-public class SaveLimitPackages extends SQLiteOpenHelper {
+public class LimitPackages extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "focusOnMeDb2";
     private static final int DB_VERSION = 2;
@@ -17,7 +17,7 @@ public class SaveLimitPackages extends SQLiteOpenHelper {
     private static final String PACKAGE_COL_LIMIT="packageName2";
     private static final String DURATION="duration";
 
-    public SaveLimitPackages(Context context) {
+    public LimitPackages(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 

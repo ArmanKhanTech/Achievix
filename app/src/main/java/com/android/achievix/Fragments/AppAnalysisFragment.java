@@ -21,7 +21,7 @@ import androidx.fragment.app.Fragment;
 
 import com.android.achievix.Adapter.AppAdapter;
 import com.android.achievix.Adapter.AppList;
-import com.android.achievix.DataBase.AnalysisDatabase;
+import com.android.achievix.Database.AnalysisDatabase;
 import com.android.achievix.R;
 
 import java.util.ArrayList;

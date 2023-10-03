@@ -20,10 +20,10 @@ import android.widget.Toast;
 import com.android.achievix.Activity.InternetBlockActivity;
 import com.android.achievix.Adapter.AppAdapter;
 import com.android.achievix.Adapter.AppList;
-import com.android.achievix.DataBase.InternetBlockDatabase;
-import com.android.achievix.DataBase.Packages;
-import com.android.achievix.DataBase.SaveLimitPackages;
-import com.android.achievix.DataBase.SaveRestrictPackages;
+import com.android.achievix.Database.InternetBlockDatabase;
+import com.android.achievix.Database.Packages;
+import com.android.achievix.Database.LimitPackages;
+import com.android.achievix.Database.RestrictPackages;
 import com.android.achievix.R;
 import com.android.achievix.Service.ForegroundService;
 
@@ -45,8 +45,8 @@ public class DataLimitedAppList extends Fragment {
     loadApps la=new loadApps();
     Boolean b=false;
     View view;
-    SaveRestrictPackages db4;
-    SaveLimitPackages db5;
+    RestrictPackages db4;
+    LimitPackages db5;
 
     public DataLimitedAppList() {
     }
@@ -70,8 +70,8 @@ public class DataLimitedAppList extends Fragment {
 
         db=new InternetBlockDatabase(getActivity());
         db3=new Packages(getActivity());
-        db4=new SaveRestrictPackages(getActivity());
-        db5=new SaveLimitPackages(getActivity());
+        db4=new RestrictPackages(getActivity());
+        db5=new LimitPackages(getActivity());
 
         packs=db.readInternetPacks();
         packs2= db3.readPacks();

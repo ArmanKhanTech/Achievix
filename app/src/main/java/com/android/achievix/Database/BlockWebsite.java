@@ -1,4 +1,4 @@
-package com.android.achievix.DataBase;
+package com.android.achievix.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 
-public class SaveWebsites extends SQLiteOpenHelper {
+public class BlockWebsite extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "focusOnMeDb5";
     private static final int DB_VERSION = 1;
@@ -16,7 +16,7 @@ public class SaveWebsites extends SQLiteOpenHelper {
     private static final String ID_COL = "id5";
     private static final String WEBSITES = "website";
 
-    public SaveWebsites(Context context) {
+    public BlockWebsite(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 

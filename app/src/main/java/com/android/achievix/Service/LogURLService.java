@@ -9,8 +9,8 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import androidx.annotation.NonNull;
 
 import com.android.achievix.Activity.BlockWebActivity;
-import com.android.achievix.DataBase.AnalysisDatabase;
-import com.android.achievix.DataBase.SaveWebsites;
+import com.android.achievix.Database.AnalysisDatabase;
+import com.android.achievix.Database.BlockWebsite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,7 @@ public class LogURLService extends AccessibilityService {
 
     public String browserApp="";
     public String browserUrl="";
-    SaveWebsites db;
+    BlockWebsite db;
     ArrayList<String> blockedUrls;
 
     @SuppressLint("SwitchIntDef")
@@ -77,7 +77,7 @@ public class LogURLService extends AccessibilityService {
                                     url = browserUrl;
                                 }
                             }
-                            db = new SaveWebsites(this);
+                            db = new BlockWebsite(this);
                             blockedUrls = db.readWebsites();
                             if (blockedUrls.contains(url)) {
                                 Intent lockIntent = new Intent(this, BlockWebActivity.class);
@@ -107,7 +107,7 @@ public class LogURLService extends AccessibilityService {
                                         url = browserUrl;
                                     }
                                 }
-                                db = new SaveWebsites(this);
+                                db = new BlockWebsite(this);
                                 blockedUrls = db.readWebsites();
                                 if (blockedUrls.contains(url)) {
                                     Intent lockIntent = new Intent(this, BlockWebActivity.class);

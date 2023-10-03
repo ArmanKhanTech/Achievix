@@ -1,4 +1,4 @@
-package com.android.achievix.DataBase;
+package com.android.achievix.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
 
-public class SaveRestrictPackages extends SQLiteOpenHelper {
+public class RestrictPackages extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "focusOnMeDb";
     private static final int DB_VERSION = 1;
@@ -16,7 +16,7 @@ public class SaveRestrictPackages extends SQLiteOpenHelper {
     private static final String ID_COL = "id";
     private static final String PACKAGE_COL_RESTRICT = "packageName";
 
-    public SaveRestrictPackages(Context context) {
+    public RestrictPackages(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 

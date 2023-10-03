@@ -18,10 +18,10 @@ import androidx.fragment.app.Fragment;
 import com.android.achievix.Activity.RestrictActivity;
 import com.android.achievix.Adapter.AppAdapter;
 import com.android.achievix.Adapter.AppList;
-import com.android.achievix.DataBase.AnalysisDatabase;
-import com.android.achievix.DataBase.Packages;
-import com.android.achievix.DataBase.SaveLimitPackages;
-import com.android.achievix.DataBase.SaveRestrictPackages;
+import com.android.achievix.Database.AnalysisDatabase;
+import com.android.achievix.Database.Packages;
+import com.android.achievix.Database.LimitPackages;
+import com.android.achievix.Database.RestrictPackages;
 import com.android.achievix.R;
 import com.android.achievix.Service.ForegroundService;
 
@@ -31,8 +31,8 @@ public class RestrictedAppList extends Fragment {
 
     ListView lvv2;
     TextView tvvv2;
-    private SaveRestrictPackages db;
-    private SaveLimitPackages db2;
+    private RestrictPackages db;
+    private LimitPackages db2;
     private Packages db3;
     private AnalysisDatabase db4;
     private ArrayList<String> packs,packs2;
@@ -65,8 +65,8 @@ public class RestrictedAppList extends Fragment {
         ll1=view.findViewById(R.id.ll1);
         unrestrict=view.findViewById(R.id.unrestrict);
         unrestrict.setVisibility(View.GONE);
-        db=new SaveRestrictPackages(getActivity());
-        db2=new SaveLimitPackages(getActivity());
+        db=new RestrictPackages(getActivity());
+        db2=new LimitPackages(getActivity());
         db3=new Packages(getActivity());
         db4=new AnalysisDatabase(getActivity());
         packs=db.readRestrictPacks();

@@ -1,35 +1,53 @@
 package com.android.achievix.Service;
-//DONE
+
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 
-import com.android.achievix.DataBase.AnalysisDatabase;
-import com.android.achievix.DataBase.SaveLimitPackages;
-import com.android.achievix.DataBase.SaveRestrictPackages;
+import com.android.achievix.Database.AnalysisDatabase;
+import com.android.achievix.Database.LimitPackages;
+import com.android.achievix.Database.RestrictPackages;
 
 import java.util.ArrayList;
 
 public class NotificationBlock extends NotificationListenerService {
+    private LimitPackages limitPackagesDb;
+    private RestrictPackages restrictPackagesDb;
+    private AnalysisDatabase analysisDatabaseDb;
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        limitPackagesDb = new LimitPackages(this);
+        restrictPackagesDb = new RestrictPackages(this);
+        analysisDatabaseDb = new AnalysisDatabase(this);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        limitPackagesDb.close();
+        restrictPackagesDb.close();
+        analysisDatabaseDb.close();
+    }
 
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
         super.onNotificationPosted(sbn);
-        SaveLimitPackages db = new SaveLimitPackages(this);
-        SaveRestrictPackages db1 = new SaveRestrictPackages(this);
-        ArrayList<String> packs = db1.readRestrictPacks();
-        ArrayList<String> packs1 = db.readLimitPacks();
-        AnalysisDatabase db2=new AnalysisDatabase(this);
-        if(db.isDbEmpty()) {
-            if (packs.contains(sbn.getPackageName())) {
-                cancelNotification(sbn.getKey());
-                db2.inAppNotiblocked(sbn.getPackageName());
-            }
+
+        ArrayList<String> limitPacks =limitPackagesDb.readLimitPacks();
+        ArrayList<String> restrictPacks = restrictPackagesDb.readRestrictPacks();
+
+        if (limitPacks.contains(sbn.getPackageName()) || restrictPacks.contains(sbn.getPackageName())) {
+            cancelNotification(sbn.getKey());
+            analysisDatabaseDb.inAppNotiblocked(sbn.getPackageName());
         }
-        if(db1.isDbEmpty()) {
-            if (packs1.contains(sbn.getPackageName())) {
-                cancelNotification(sbn.getKey());
-                db2.inAppNotiblocked(sbn.getPackageName());
-            }
-        }
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        // Release any unnecessary resources to help reduce your service's memory footprint.
     }
 }

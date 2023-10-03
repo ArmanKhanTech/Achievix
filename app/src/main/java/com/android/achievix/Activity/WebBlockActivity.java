@@ -24,9 +24,9 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.android.achievix.Adapter.AppAdapter;
 import com.android.achievix.Adapter.AppList;
-import com.android.achievix.DataBase.AnalysisDatabase;
-import com.android.achievix.DataBase.Packages;
-import com.android.achievix.DataBase.SaveWebsites;
+import com.android.achievix.Database.AnalysisDatabase;
+import com.android.achievix.Database.Packages;
+import com.android.achievix.Database.BlockWebsite;
 import com.android.achievix.R;
 import com.android.achievix.Service.LogURLService;
 
@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 public class WebBlockActivity extends AppCompatActivity {
 
-    SaveWebsites db;
+    BlockWebsite db;
     AnalysisDatabase db3;
     ArrayList<String> packs2,packs;
     TextView tv;
@@ -134,7 +134,7 @@ public class WebBlockActivity extends AppCompatActivity {
     private void populateList(){
         @SuppressLint("UseCompatLoadingForDrawables") Drawable icon=getDrawable(R.drawable.web_icon);
         ArrayList<String> w;
-        db=new SaveWebsites(this);
+        db=new BlockWebsite(this);
         w=db.readWebsites();
         list.clear();
 

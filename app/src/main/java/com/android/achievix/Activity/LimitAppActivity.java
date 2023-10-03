@@ -24,8 +24,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.android.achievix.DataBase.AnalysisDatabase;
-import com.android.achievix.DataBase.SaveLimitPackages;
+import com.android.achievix.Database.AnalysisDatabase;
+import com.android.achievix.Database.LimitPackages;
 import com.android.achievix.R;
 import com.android.achievix.Service.ForegroundService;
 import com.android.achievix.Utility.GetUsageInfo;
@@ -45,7 +45,7 @@ import java.util.Objects;
 
 public class LimitAppActivity extends AppCompatActivity {
 
-    SaveLimitPackages db=new SaveLimitPackages(this);
+    LimitPackages db=new LimitPackages(this);
     AnalysisDatabase db2;
     ArrayList<String> packs=new ArrayList<>();
     String packageName="";

@@ -29,10 +29,10 @@ import androidx.core.app.NotificationCompat;
 import com.android.achievix.Activity.BlockAppActivity;
 import com.android.achievix.Activity.EnterPasswordActivity;
 import com.android.achievix.Activity.MainActivity;
-import com.android.achievix.DataBase.AnalysisDatabase;
-import com.android.achievix.DataBase.InternetBlockDatabase;
-import com.android.achievix.DataBase.SaveLimitPackages;
-import com.android.achievix.DataBase.SaveRestrictPackages;
+import com.android.achievix.Database.AnalysisDatabase;
+import com.android.achievix.Database.InternetBlockDatabase;
+import com.android.achievix.Database.LimitPackages;
+import com.android.achievix.Database.RestrictPackages;
 import com.android.achievix.R;
 
 import java.math.RoundingMode;
@@ -48,8 +48,8 @@ import java.util.TreeMap;
 public class ForegroundService extends Service {
     public static final String CHANNEL_ID = "ForegroundServiceChannel";
     Context mContext;
-    SaveRestrictPackages db = new SaveRestrictPackages(this);
-    SaveLimitPackages db1=new SaveLimitPackages(this);
+    RestrictPackages db = new RestrictPackages(this);
+    LimitPackages db1=new LimitPackages(this);
     AnalysisDatabase db2=new AnalysisDatabase(this);
     InternetBlockDatabase db3=new InternetBlockDatabase(this);
 

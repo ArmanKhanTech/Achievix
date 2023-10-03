@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.achievix.DataBase.AnalysisDatabase;
+import com.android.achievix.Database.AnalysisDatabase;
 import com.android.achievix.R;
 import com.android.achievix.Utility.GetUsageInfo;
 import com.github.mikephil.charting.charts.BarChart;

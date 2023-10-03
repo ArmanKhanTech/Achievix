@@ -1,4 +1,4 @@
-package com.android.achievix.DataBase;
+package com.android.achievix.Database;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -32,8 +32,8 @@ import androidx.fragment.app.Fragment;
 import com.android.achievix.Activity.InternetBlockActivity;
 import com.android.achievix.Adapter.AppAdapter;
 import com.android.achievix.Adapter.AppList;
-import com.android.achievix.DataBase.InternetBlockDatabase;
-import com.android.achievix.DataBase.Packages;
+import com.android.achievix.Database.InternetBlockDatabase;
+import com.android.achievix.Database.Packages;
 import com.android.achievix.R;
 import com.android.achievix.Service.ForegroundService;
 

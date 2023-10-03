@@ -16,13 +16,14 @@ import androidx.core.app.NotificationCompat;
 import com.android.achievix.Activity.JobReminderActivity;
 import com.android.achievix.R;
 
-public class AlarmBoardcast extends BroadcastReceiver {
+public class AlarmBroadcast extends BroadcastReceiver {
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onReceive(Context context, Intent intent) {
 
         Bundle bundle = intent.getExtras();
 
+        assert bundle != null;
         String text = bundle.getString("event");
 
         Intent intent1 = new Intent(context, JobReminderActivity.class);

@@ -18,9 +18,9 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.achievix.DataBase.JobDatabase;
+import com.android.achievix.Database.JobDatabase;
 import com.android.achievix.R;
-import com.android.achievix.Service.AlarmBoardcast;
+import com.android.achievix.Service.AlarmBroadcast;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -128,7 +128,7 @@ public class NewJobActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void setAlarm(String text, String date, String time) {
         AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(getApplicationContext(), AlarmBoardcast.class);
+        Intent intent = new Intent(getApplicationContext(), AlarmBroadcast.class);
         intent.putExtra("event", text);
         intent.putExtra("time", date);
         intent.putExtra("date", time);
