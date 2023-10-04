@@ -20,55 +20,50 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.android.achievix.R;
 
 public class ParentalControlActivity extends AppCompatActivity {
-
     EditText edt1 ;
     @SuppressLint("UseSwitchCompatOrMaterialCode")
     Switch s1;
-    Button b1,b2;
+    Button b1, b2;
+    LinearLayout ll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_parental_control);
-        LinearLayout lll=findViewById(R.id.lll);
-        s1=findViewById(R.id.sw1);
+        ll = findViewById(R.id.lll);
+        s1 = findViewById(R.id.sw1);
         s1.setChecked(checkPass());
 
-        b2=findViewById(R.id.bbb123);
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        b2 = findViewById(R.id.bbb123);
+        b2.setOnClickListener(view -> finish());
 
         if(!checkPass()){
-            lll.setVisibility(View.GONE);
+            ll.setVisibility(View.GONE);
         }
         else{
-            lll.setVisibility(View.VISIBLE);
+            ll.setVisibility(View.VISIBLE);
         }
 
         s1.setOnCheckedChangeListener((compoundButton, b) -> {
             if(!b){
                 int pass=0;
-                SharedPreferences.Editor editor = getSharedPreferences("PASS_CODE", MODE_PRIVATE).edit();
-                editor.putInt("pass", pass);
+                SharedPreferences.Editor editor = getSharedPreferences("achievix", MODE_PRIVATE).edit();
+                editor.putInt("password", pass);
                 editor.apply();
-                lll.setVisibility(View.GONE);
+                ll.setVisibility(View.GONE);
             }
             else{
-                lll.setVisibility(View.VISIBLE);
-                Toast.makeText(getApplicationContext(), "Kindly Enter A New Password.", Toast.LENGTH_SHORT).show();
+                ll.setVisibility(View.VISIBLE);
+                Toast.makeText(getApplicationContext(), "Kindly enter a new password.", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
     public boolean checkPass(){
-        SharedPreferences sh = getSharedPreferences("PASS_CODE", Context.MODE_PRIVATE);
+        SharedPreferences sh = getSharedPreferences("achievix", Context.MODE_PRIVATE);
         boolean is;
-        int i = sh.getInt("pass",0 );
-        is= i > 0;
+        int i = sh.getInt("password", 0 );
+        is = i > 0;
         return is;
     }
 
@@ -84,17 +79,17 @@ public class ParentalControlActivity extends AppCompatActivity {
         b1.setOnClickListener(view -> {
             String temp=edt1.getText().toString();
             if(temp.isEmpty()){
-                Toast.makeText(getApplicationContext(), "Feild Cannot Be Empty", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Field cannot be empty.", Toast.LENGTH_SHORT).show();
             }
-            else if(temp.length()<=4){
-                Toast.makeText(getApplicationContext(), "Password Too Short", Toast.LENGTH_SHORT).show();
+            else if(temp.length() <= 4){
+                Toast.makeText(getApplicationContext(), "Password too short.", Toast.LENGTH_SHORT).show();
             }
             else {
                 int pass = Integer.parseInt(temp);
-                SharedPreferences.Editor editor = getSharedPreferences("PASS_CODE", MODE_PRIVATE).edit();
-                editor.putInt("pass", pass);
+                SharedPreferences.Editor editor = getSharedPreferences("achievix", MODE_PRIVATE).edit();
+                editor.putInt("password", pass);
                 editor.apply();
-                Toast.makeText(getApplicationContext(), "Password Set", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Password set.", Toast.LENGTH_SHORT).show();
                 popupWindow.dismiss();
             }
         });

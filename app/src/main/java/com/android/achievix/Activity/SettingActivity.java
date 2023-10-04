@@ -17,10 +17,8 @@ import com.android.achievix.Service.AdminReceiver;
 import com.android.achievix.Service.ForegroundService;
 
 public class SettingActivity extends AppCompatActivity {
-
     LinearLayout l1,l2,l3;
-    private DevicePolicyManager mgr=null;
-    private ComponentName cn=null;
+    private ComponentName cn = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +29,7 @@ public class SettingActivity extends AppCompatActivity {
         l2=findViewById(R.id.lll2);
         l3=findViewById(R.id.lll3);
 
-        cn=new ComponentName(this, AdminReceiver.class);
-        mgr=(DevicePolicyManager)getSystemService(DEVICE_POLICY_SERVICE);
+        cn = new ComponentName(this, AdminReceiver.class);
 
         Button b2=findViewById(R.id.bbb122);
         b2.setOnClickListener(new View.OnClickListener() {
@@ -44,13 +41,12 @@ public class SettingActivity extends AppCompatActivity {
     }
 
     public void changeName(View v){
-        Intent i=new Intent(this,EnterNameActivity.class);
+        Intent i=new Intent(this, EnterNameActivity.class);
         startActivity(i);
     }
 
     public void uninstallProtection(View v){
-        Intent intent=
-                new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
+        Intent intent = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
         intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, cn);
         startActivity(intent);
     }

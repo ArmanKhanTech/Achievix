@@ -9,7 +9,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
 public class LimitPackages extends SQLiteOpenHelper {
-
     private static final String DB_NAME = "focusOnMeDb2";
     private static final int DB_VERSION = 2;
     private static final String TABLE_NAME = "userInfo2";
@@ -81,16 +80,8 @@ public class LimitPackages extends SQLiteOpenHelper {
     public boolean isDbEmpty(){
         SQLiteDatabase db=this.getReadableDatabase();
         Cursor mCursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
-        Boolean rowExists;
-
-        if (mCursor.moveToFirst())
-        {
-            rowExists = true;
-        }
-        else
-        {
-            rowExists = false;
-        }
+        boolean rowExists;
+        rowExists = mCursor.moveToFirst();
         mCursor.close();
         return rowExists;
     }

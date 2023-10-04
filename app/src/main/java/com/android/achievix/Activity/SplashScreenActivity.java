@@ -27,17 +27,16 @@ public class SplashScreenActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_splash_screen);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-        SharedPreferences dataSave = getSharedPreferences("firstLog", 0);
+        SharedPreferences sharedPref = getSharedPreferences("achievix", MODE_PRIVATE);
         Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);
         ImageView imageView = findViewById(R.id.imageView1);
         imageView.startAnimation(rotate);
         Handler handler = new Handler();
-        if(Objects.equals(dataSave.getString("firstTime", ""), "no")) {
+        if(Objects.equals(sharedPref.getString("firstTime", ""), "no")) {
             handler.postDelayed(() -> {
-                SharedPreferences sh = getSharedPreferences("PASS_CODE", Context.MODE_PRIVATE);
-                int i = sh.getInt("pass",0 );
+                int i = sharedPref.getInt("password", 0);
                 Intent intent;
-                if(i>0){
+                if(i != 0 ){
                     intent = new Intent(this, EnterPasswordActivity.class);
                 }
                 else{
@@ -48,9 +47,6 @@ public class SplashScreenActivity extends AppCompatActivity {
             }, 3000);
         }
         else{
-            SharedPreferences.Editor editor=dataSave.edit();
-            editor.putString("firstTime","no");
-            editor.apply();
             handler.postDelayed(() -> {
                 Intent intent = new Intent(SplashScreenActivity.this, GetUsageStatsPermissionActivity.class);
                 startActivity(intent);

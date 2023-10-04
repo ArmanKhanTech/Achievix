@@ -9,7 +9,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
 public class AnalysisDatabase extends SQLiteOpenHelper {
-
     private static final String DB_NAME = "focusOnMeDb4";
     private static final int DB_VERSION = 1;
     private static final String TABLE_NAME = "userInfo4";
