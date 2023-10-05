@@ -14,14 +14,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.achievix.Activity.EnterNameActivity;
 import com.android.achievix.R;
+import com.android.achievix.View.ExpandableTextView;
 
 public class GetNotificationAccess extends AppCompatActivity {
     Button finish;
+    TextView status;
+    ExpandableTextView expandableTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_notification_access);
+        expandableTextView = findViewById(R.id.expandableTextViewNoti);
+        status = findViewById(R.id.noti_per);
+        finish = findViewById(R.id.grant_noti_access);
+        granted();
     }
 
     @Override
@@ -31,10 +38,8 @@ public class GetNotificationAccess extends AppCompatActivity {
     }
 
     public void granted(){
-        TextView tv1= findViewById(R.id.tv11);
-        finish= findViewById(R.id.grant11);
         if (Settings.Secure.getString(this.getContentResolver(), "enabled_notification_listeners").contains(getApplicationContext().getPackageName())) {
-            tv1.setText("Permission Granted");
+            status.setText("Permission Granted");
             finish.setVisibility(View.GONE);
         }
     }
@@ -44,7 +49,11 @@ public class GetNotificationAccess extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void done11(View view){
+    public void toggle(View v){
+        expandableTextView.toggle();
+    }
+
+    public void done(View view){
         SharedPreferences sharedPref = getSharedPreferences("achievix", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("firstTime","no");

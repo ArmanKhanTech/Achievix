@@ -3,4 +3,10 @@
     <string name="draw_over_apps">
         When you grant the \"Draw over other apps\" permission to an app, it will be able to :\n1. Display content on top of other apps.\n2. Interact with other apps, such as starting or stopping other apps.
     </string>
+    <string name="noti_per">
+        The \"Notification Access\" permission allows our app to read the current set of notifications, including any metadata and attached intents. This permission can be used by apps to provide various features, such as :\n1. Displaying a list of all your notifications in a single place.\n2. Snoozing or dismissing notifications.
+    </string>
+    <string name="usage_per">
+        The \"Usage Access\" permission allows an app to access data about how other apps are being used. This data includes the names of the apps, how much time is spent in each app, and when the apps were last used.\nUsage Access permission can be used by apps to provide various features, such as:\n1. Displaying a list of all the apps that you have used on a given day or week.\n2. Blocking or restricting access to certain apps.
+    </string>
 </resources>

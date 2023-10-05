@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import com.android.achievix.Permissions.GetDrawOverAppsPermission;
+import com.android.achievix.Permissions.GetNotificationAccess;
 import com.android.achievix.Permissions.GetUsageStatsPermissionActivity;
 import com.android.achievix.R;
 
@@ -41,7 +42,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     intent = new Intent(this, EnterPasswordActivity.class);
                 }
                 else{
-                    intent = new Intent(this, GetDrawOverAppsPermission.class);
+                    intent = new Intent(this, MainActivity.class);
                 }
                 startActivity(intent);
                 finish();
