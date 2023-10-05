@@ -93,7 +93,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center|bottom"
         android:layout_margin="10dp"
-        android:background="@drawable/internetbutton_theme"
+        android:background="@drawable/internet_button_theme"
         android:text="Limit"
         android:clickable="false"
         android:textColor="@color/white" />

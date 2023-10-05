@@ -96,7 +96,7 @@
             android:layout_height="40dp"
             android:layout_margin="10dp"
             android:layout_gravity="center|bottom"
-            android:background="@drawable/bgbutton_theme"
+            android:background="@drawable/list_bg_theme"
             android:text="Restrict"
             android:clickable="false"
             android:textColor="@color/white" />

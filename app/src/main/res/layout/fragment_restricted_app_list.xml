@@ -60,7 +60,7 @@
         android:layout_height="40dp"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_margin="10dp"
-        android:background="@drawable/bgbutton_theme"
+        android:background="@drawable/list_bg_theme"
         android:clickable="false"
         android:text="UnRestrict"
         android:textColor="@color/white"

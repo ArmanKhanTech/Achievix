@@ -14,7 +14,6 @@ import com.android.achievix.R;
 import java.util.ArrayList;
 
 public class AppAdapter extends BaseAdapter implements Filterable {
-
     public LayoutInflater layoutInflater;
     public ArrayList<AppList> listStorage;
     public ArrayList<AppList> filteredApps;

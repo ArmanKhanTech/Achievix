@@ -2,66 +2,96 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="300dp"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:text="Kindly Grant Draw Over"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:text="Apps"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-        android:text="Permission"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/draw_over_apps_per" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="15sp"
-        android:id="@+id/tv1"
-        android:layout_marginTop="10dp"
-        android:text="Permission Not Granted"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Draw over other apps"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/draw_over_apps_per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Permission Not Granted"
+                android:textSize="20dp" />
 
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue"
-            android:onClick="done"
-            android:textColor="@color/white"
-            android:text="NEXT" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/draw_over_apps"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
 
-        <Button
-            android:id="@+id/grant1"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue"
-            android:textColor="@color/white"
-            android:onClick="getDrawOverAppsPermission"
-            android:text="Grant" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp">
 
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/per_button_theme"
+                    android:elevation="0dp"
+                    android:onClick="done"
+                    android:paddingBottom="2dp"
+                    android:shadowColor="@color/white"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
 
-    </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/grant_over_apps"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/per_button_theme"
+                    android:elevation="0dp"
+                    android:onClick="getDrawOverAppsPermission"
+                    android:paddingBottom="2dp"
+                    android:shadowColor="@color/white"
+                    android:text="Grant"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

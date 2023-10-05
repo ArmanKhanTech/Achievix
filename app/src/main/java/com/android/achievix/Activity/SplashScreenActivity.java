@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import com.android.achievix.Permissions.GetDrawOverAppsPermission;
 import com.android.achievix.Permissions.GetUsageStatsPermissionActivity;
 import com.android.achievix.R;
 
@@ -29,7 +30,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         SharedPreferences sharedPref = getSharedPreferences("achievix", MODE_PRIVATE);
         Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate);
-        ImageView imageView = findViewById(R.id.imageView1);
+        ImageView imageView = findViewById(R.id.splash_icon);
         imageView.startAnimation(rotate);
         Handler handler = new Handler();
         if(Objects.equals(sharedPref.getString("firstTime", ""), "no")) {
@@ -40,7 +41,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                     intent = new Intent(this, EnterPasswordActivity.class);
                 }
                 else{
-                    intent = new Intent(this, MainActivity.class);
+                    intent = new Intent(this, GetDrawOverAppsPermission.class);
                 }
                 startActivity(intent);
                 finish();
