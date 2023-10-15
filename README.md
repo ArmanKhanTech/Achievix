@@ -152,6 +152,7 @@ Follow the below instructions to get started.
 - [x] Reduce RAM Consumption
 - [x] Add Uninstall Protect
 - [ ] Major Upgrade (UI & Bugs fix + some performace improvements)
+- [ ] Upload on Play Store
 
 See the [open issues](https://github.com/ArmanKhanTech/FocusOnMe/issues) for a full list of proposed features (and known issues)
 
