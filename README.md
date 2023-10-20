@@ -19,7 +19,7 @@
   <p align="center">
     An android productivity app.
     <br />
-    <a href="https://github.com/ArmanKhanTech/FocusOnMe"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ArmanKhanTech/Achievix"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/ArmanKhanTech/FocusOnMe/issues">Report a Bug</a>
