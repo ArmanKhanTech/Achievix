@@ -24,7 +24,7 @@
     <br />
     <a href="https://github.com/ArmanKhanTech/Achievix/issues">Report a Bug</a>
     ·
-    <a href="https://github.com/ArmanKhanTech/FocusOnMe/issues">Request new Feature</a>
+    <a href="https://github.com/ArmanKhanTech/Achievix/issues">Request new Feature</a>
   </p>
 </div>
 
