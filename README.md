@@ -154,7 +154,7 @@ Follow the below instructions to get started.
 - [ ] Major Upgrade (UI & Bugs fix + some performace improvements)
 - [ ] Upload on Play Store
 
-See the [open issues](https://github.com/ArmanKhanTech/FocusOnMe/issues) for a full list of proposed features (and known issues)
+See the [open issues](https://github.com/ArmanKhanTech/Achievix/issues) for a full list of proposed features (and known issues)
 
 
 
