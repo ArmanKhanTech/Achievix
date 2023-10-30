@@ -198,7 +198,7 @@ Project Link - [https://github.com/ArmanKhanTech/FocusOnMe](https://github.com/A
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
-[contributors-url]: https://github.com/ArmanKhanTech/FocusOnMe/graphs/contributors
+[contributors-url]: https://github.com/ArmanKhanTech/Achievix/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
 [forks-url]: https://github.com/ArmanKhanTech/FocusOnMe/network/members
 [stars-shield]: https://img.shields.io/github/stars/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
