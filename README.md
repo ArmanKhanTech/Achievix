@@ -200,7 +200,7 @@ Project Link - [https://github.com/ArmanKhanTech/FocusOnMe](https://github.com/A
 [contributors-shield]: https://img.shields.io/github/contributors/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
 [contributors-url]: https://github.com/ArmanKhanTech/Achievix/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
-[forks-url]: https://github.com/ArmanKhanTech/FocusOnMe/network/members
+[forks-url]: https://github.com/ArmanKhanTech/Achievix/network/members
 [stars-shield]: https://img.shields.io/github/stars/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
 [stars-url]: https://github.com/ArmanKhanTech/Achievix/stargazers
 [issues-shield]: https://img.shields.io/github/issues/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
