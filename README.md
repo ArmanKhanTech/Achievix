@@ -206,7 +206,7 @@ Project Link - [https://github.com/ArmanKhanTech/Achievix](https://github.com/Ar
 [issues-shield]: https://img.shields.io/github/issues/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
 [issues-url]: https://github.com/ArmanKhanTech/Achievix/issues
 [license-shield]: https://img.shields.io/github/license/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
-[license-url]: https://github.com/ArmanKhanTech/FocusOnMe/blob/master/LICENSE.txt
+[license-url]: https://github.com/ArmanKhanTech/Achievix/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/arman-khan-25b624205/
 [Android]: https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white
