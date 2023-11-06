@@ -197,7 +197,7 @@ Project Link - [https://github.com/ArmanKhanTech/Achievix](https://github.com/Ar
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/ArmanKhanTech/Achievix.svg?style=for-the-badge
 [contributors-url]: https://github.com/ArmanKhanTech/Achievix/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ArmanKhanTech/FocusOnMe.svg?style=for-the-badge
 [forks-url]: https://github.com/ArmanKhanTech/Achievix/network/members
