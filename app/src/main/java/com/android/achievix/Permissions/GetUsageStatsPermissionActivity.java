@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -38,10 +39,12 @@ public class GetUsageStatsPermissionActivity extends AppCompatActivity {
 
     public void granted(){
         if(checkForPermission(this)) {
-            if (Settings.canDrawOverlays(this)) {
-                status.setText("Permission Granted");
-                grant.setVisibility(View.GONE);
-            }
+            status.setText("Permission Granted");
+            grant.setVisibility(View.GONE);
+        }
+        else {
+            status.setText("Permission Denied");
+            grant.setVisibility(View.VISIBLE);
         }
     }
 
