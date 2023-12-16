@@ -58,7 +58,7 @@
 
 ## About The Project
 
-Achievix is an android productivty app thats lets you do whats necessary to do by getting rid of all kinds of distractions.
+Achievix is an Android productivty app thats lets you do whats necessary to do by getting rid of all kinds of distractions.
 
 **Supports Android 10 & above only.**
 
