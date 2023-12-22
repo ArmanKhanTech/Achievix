@@ -42,7 +42,7 @@ public class GetUsageStatsPermissionActivity extends AppCompatActivity {
             grant.setVisibility(View.GONE);
         }
         else {
-            status.setText("Permission Denied");
+            status.setText("Permission not Granted");
             grant.setVisibility(View.VISIBLE);
         }
     }

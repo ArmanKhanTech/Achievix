@@ -88,9 +88,9 @@ public class ForegroundService extends Service {
         pendingIntent = PendingIntent.getActivity(this,
                 0, notificationIntent, FLAG_IMMUTABLE);
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("FocusOnMe")
+                .setContentTitle("Achievix")
                 .setContentText(input)
-                .setSmallIcon(R.drawable.notification_png)
+                .setSmallIcon(R.mipmap.app_icon)
                 .setContentIntent(pendingIntent)
                 .build();
         startForeground(1, notification);

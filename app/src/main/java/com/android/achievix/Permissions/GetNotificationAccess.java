@@ -2,17 +2,15 @@ package com.android.achievix.Permissions;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.achievix.Activity.EnterNameActivity;
+import com.android.achievix.Activity.MainActivity;
 import com.android.achievix.R;
 import com.android.achievix.View.ExpandableTextView;
 
@@ -58,7 +56,7 @@ public class GetNotificationAccess extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("firstTime","no");
         editor.apply();
-        Intent intent = new Intent(GetNotificationAccess.this, EnterNameActivity.class);
+        Intent intent = new Intent(GetNotificationAccess.this, MainActivity.class);
         startActivity(intent);
         finish();
     }
