@@ -64,9 +64,7 @@ Achievix is an Android productivty app thats lets you do whats necessary to do b
 
 ### Built With
 
-* [![Android][Android]][Android-url]
 * [![Java][Java]][Java-url]
-* [![Gradle][Gradle]][Gradle-url]
 * [![Sqlite][Sqlite]][Sqlite-url]
 
 
@@ -80,7 +78,7 @@ Follow the below instructions to get started.
 
 <ol>
   <li>
-    <p>Android Studio IDE</a>
+    <p>Android Studio</a>
   </li>
 </ol>
 
@@ -96,6 +94,8 @@ Follow the below instructions to get started.
 
 
 ## Usage
+
+...
 
 ### Features
 
