@@ -7,7 +7,6 @@
 
 
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/ArmanKhanTech/Achievix/">
@@ -17,7 +16,7 @@
   <h3 align="center">Achievix</h3>
 
   <p align="center">
-    An android productivity app.
+    An Android productivity app.
     <br />
     <a href="https://github.com/ArmanKhanTech/Achievix"><strong>Explore the docs »</strong></a>
     <br />
@@ -30,14 +29,13 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">About the Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built with</a></li>
       </ul>
     </li>
     <li>
@@ -58,11 +56,9 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-Achievix is an android productivty app thats lets you do whats necessary to do by getting rid of all kinds of distractions.
+Achievix is an Android productivty app thats lets you do whats necessary to do by getting rid of all kinds of distractions.
 
 **Supports Android 10 & above only.**
 
@@ -75,7 +71,6 @@ Achievix is an android productivty app thats lets you do whats necessary to do b
 
 
 
-<!-- GETTING STARTED -->
 ## Getting Started
 
 Follow the below instructions to get started.
@@ -100,7 +95,6 @@ Follow the below instructions to get started.
 
 
 
-<!-- USAGE EXAMPLES -->
 ## Usage
 
 ### Features
@@ -136,7 +130,7 @@ Follow the below instructions to get started.
 </ol>
 
 
-<!-- ROADMAP -->
+
 ## Roadmap
 
 - [x] Add Home Activity
@@ -158,7 +152,6 @@ See the [open issues](https://github.com/ArmanKhanTech/Achievix/issues) for a fu
 
 
 
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -171,14 +164,12 @@ Thanks again!
 
 
 
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-<!-- CONTACT -->
 ## Contact
 
 Arman Khan - ak2341776@gmail.com
@@ -187,7 +178,6 @@ Project Link - [https://github.com/ArmanKhanTech/Achievix](https://github.com/Ar
 
 
 
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 
@@ -196,7 +186,6 @@ Project Link - [https://github.com/ArmanKhanTech/Achievix](https://github.com/Ar
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/ArmanKhanTech/Achievix.svg?style=for-the-badge
 [contributors-url]: https://github.com/ArmanKhanTech/Achievix/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/ArmanKhanTech/Achievix.svg?style=for-the-badge
