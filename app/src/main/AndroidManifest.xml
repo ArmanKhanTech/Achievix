@@ -56,7 +56,6 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".Service.AlarmBroadcast" />
 
         <service
             android:name=".Service.ForegroundService"
