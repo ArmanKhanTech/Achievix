@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ArmanKhanTech/Achievix/">
-    <img src="https://github.com/ArmanKhanTech/FocusOnMe/assets/92728787/cf3acfa7-2425-4629-9760-58d77ec9e7bd" alt="Logo" width="80" height="80">
+    <img src="https://github.com/ArmanKhanTech/Achievix/assets/92728787/b6eea048-0f67-4412-b3c4-63840778a990" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Achievix</h3>
@@ -64,9 +64,7 @@ Achievix is an Android productivty app thats lets you do whats necessary to do b
 
 ### Built With
 
-* [![Android][Android]][Android-url]
 * [![Java][Java]][Java-url]
-* [![Gradle][Gradle]][Gradle-url]
 * [![Sqlite][Sqlite]][Sqlite-url]
 
 
@@ -80,7 +78,7 @@ Follow the below instructions to get started.
 
 <ol>
   <li>
-    <p>Android Studio IDE</a>
+    <p>Android Studio</a>
   </li>
 </ol>
 
@@ -96,6 +94,8 @@ Follow the below instructions to get started.
 
 
 ## Usage
+
+...
 
 ### Features
 
