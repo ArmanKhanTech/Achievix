@@ -225,7 +225,7 @@ public class LimitAppList extends Fragment  {
 
     public void setButtonColor(){
         if(packages.size()>0){
-            b1.setBackground(getResources().getDrawable(R.drawable.limit_button_theme));
+            b1.setBackground(getResources().getDrawable(R.drawable.app_button_theme));
         }
         else{
             b1.setBackground(getResources().getDrawable(R.drawable.list_bg_theme));

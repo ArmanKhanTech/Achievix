@@ -11,7 +11,7 @@
     <color name="blue">#68EFE4</color>
     <color name="bg">#E1DEDE</color>
     <color name="res">#ED21C7AD</color>
-    <color name="data">#2196F3</color>
+    <color name="skyBlue">#FF2196F3</color>
     <color name="pink">#E91E63</color>
     <color name="voilet">#9C27B0</color>
 </resources>

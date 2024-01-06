@@ -74,7 +74,7 @@
                     android:layout_height="65dp"
                     android:layout_gravity="center_horizontal|center_vertical|center"
                     android:layout_marginTop="8dp"
-                    android:src="@drawable/app_icon" />
+                    android:src="@mipmap/app_icon" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -449,7 +449,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="start|center"
                 android:layout_marginLeft="15dp"
-                android:background="@drawable/restrict_button_theme"
+                android:background="@drawable/keyword_button_theme"
                 android:onClick="restrictApp"
                 android:text="Restrict App"
                 android:textColor="@color/white"
@@ -466,7 +466,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="end|center"
                 android:layout_marginRight="15dp"
-                android:background="@drawable/limit_button_theme"
+                android:background="@drawable/app_button_theme"
                 android:onClick="limitApp"
                 android:text="Limit App"
                 android:textColor="@color/white"

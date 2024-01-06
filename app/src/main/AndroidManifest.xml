@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
@@ -28,6 +29,12 @@
         android:roundIcon="@mipmap/app_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.FocusOnMe">
+        <activity
+            android:name=".Activity.KeywordBlockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AppBlockActivity"
+            android:exported="false" />
 
         <receiver
             android:name=".Service.RestartService"
@@ -53,11 +60,12 @@
 
         <service
             android:name=".Service.ForegroundService"
-            android:foregroundServiceType="specialUse"
             android:enabled="true"
-            android:exported="false">
-            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="To run service in the background."/>
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="To run service in the background." />
         </service>
         <service
             android:name=".Service.NotificationBlock"
@@ -74,6 +82,7 @@
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
+
             <meta-data
                 android:name="android.accessibility-service"
                 android:resource="@xml/accessibility_service" />
@@ -81,14 +90,6 @@
 
         <activity
             android:name=".Activity.UsageActivity"
-            android:exported="false"
-            android:theme="@style/Theme.FocusOnMe.CustomView.MainActivity"/>
-        <activity
-            android:name=".Activity.NewJobActivity"
-            android:exported="false"
-            android:theme="@style/Theme.FocusOnMe.CustomView.MainActivity" />
-        <activity
-            android:name=".Activity.JobReminderActivity"
             android:exported="false"
             android:theme="@style/Theme.FocusOnMe.CustomView.MainActivity" />
         <activity
@@ -159,6 +160,7 @@
             android:theme="@style/Theme.FocusOnMe">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

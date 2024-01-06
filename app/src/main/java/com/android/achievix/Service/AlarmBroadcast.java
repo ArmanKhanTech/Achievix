@@ -13,7 +13,6 @@ import android.os.Bundle;
 import androidx.annotation.RequiresApi;
 import androidx.core.app.NotificationCompat;
 
-import com.android.achievix.Activity.JobReminderActivity;
 import com.android.achievix.R;
 
 public class AlarmBroadcast extends BroadcastReceiver {

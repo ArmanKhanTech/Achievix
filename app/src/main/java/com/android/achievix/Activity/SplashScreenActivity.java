@@ -16,35 +16,37 @@ import java.util.Objects;
 
 @SuppressLint("CustomSplashScreen")
 public class SplashScreenActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Objects.requireNonNull(getSupportActionBar()).hide();
         setContentView(R.layout.activity_splash_screen);
+
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         SharedPreferences sharedPref = getSharedPreferences("achievix", MODE_PRIVATE);
+
         Handler handler = new Handler();
         if(Objects.equals(sharedPref.getString("firstTime", "yes"), "no")) {
             handler.postDelayed(() -> {
                 int i = sharedPref.getInt("password", 0);
                 Intent intent;
-                if(i != 0 ){
+
+                if(i != 0 ) {
                     intent = new Intent(this, EnterPasswordActivity.class);
                 }
-                else{
+                else {
                     intent = new Intent(this, MainActivity.class);
                 }
                 startActivity(intent);
                 finish();
-            }, 3000);
+            }, 1800);
         }
-        else{
+        else {
             handler.postDelayed(() -> {
                 Intent intent = new Intent(SplashScreenActivity.this, GetUsageStatsPermissionActivity.class);
                 startActivity(intent);
                 finish();
-            }, 2000);
+            }, 1800);
         }
     }
 }

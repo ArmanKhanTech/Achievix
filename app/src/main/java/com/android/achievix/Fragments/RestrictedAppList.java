@@ -118,7 +118,7 @@ public class RestrictedAppList extends Fragment {
 
     public void setButtonColor(){
         if(packages.size()>0){
-            unrestrict.setBackground(getResources().getDrawable(R.drawable.restrict_button_theme));
+            unrestrict.setBackground(getResources().getDrawable(R.drawable.keyword_button_theme));
         }
         else{
             unrestrict.setBackground(getResources().getDrawable(R.drawable.list_bg_theme));

@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:indeterminate="true"
-            android:indeterminateTint="@color/data"
+            android:indeterminateTint="@color/skyBlue"
             android:indeterminateTintMode="src_atop"
             android:scrollbarStyle="insideOverlay" />
 
